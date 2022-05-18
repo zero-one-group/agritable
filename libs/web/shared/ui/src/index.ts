@@ -1,1 +1,1 @@
-export * from './lib/web-shared-ui';
+export * from './lib/navbar';
