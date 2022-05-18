@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "web": "apps/web",
-    "web-e2e": "apps/web-e2e"
+    "web-e2e": "apps/web-e2e",
+    "web-shared-ui": "libs/web/shared/ui"
   }
 }

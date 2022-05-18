@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@agritable/web/shared/ui": ["libs/web/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
