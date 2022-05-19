@@ -12,9 +12,9 @@ import {
 
 export function Hero() {
   return (
-    <Box as="section" bg="bg-surface">
+    <Box as="section">
       <Box position="relative" height={{ lg: '720px' }}>
-        <Container py={{ base: '16', md: '24' }} height="full">
+        <Container pb={{ base: '12' }} height="full" maxW="container.xl">
           <Stack
             direction={{ base: 'column', lg: 'row' }}
             spacing={{ base: '16' }}
@@ -59,7 +59,6 @@ export function Hero() {
               </Stack>
             </Stack>
             <Box
-              pos={{ lg: 'absolute' }}
               right="0"
               bottom="0"
               w={{ base: 'full', lg: '50%' }}
