@@ -1,15 +1,11 @@
-import styled from '@emotion/styled';
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import { WebLandingPage } from '@agritable/web/landing-page';
+import { ChakraProvider } from '@chakra-ui/react';
 
 export function App() {
   return (
-    <StyledApp>
-      <NxWelcome title="web" />
-    </StyledApp>
+    <ChakraProvider>
+      <WebLandingPage />
+    </ChakraProvider>
   );
 }
 
