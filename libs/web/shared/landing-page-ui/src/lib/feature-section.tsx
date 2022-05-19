@@ -22,7 +22,7 @@ export function FeatureSection(props: FeatureSectionProps) {
         h="12"
         rounded="md"
         color="white"
-        bg="blue.500"
+        bg="green.500"
       >
         {icon}
       </Center>
@@ -30,7 +30,7 @@ export function FeatureSection(props: FeatureSectionProps) {
         <Text as="h3" fontSize="xl" fontWeight="extrabold">
           {title}
         </Text>
-        <Text pr="6" color={mode('gray.600', 'gray.400')} lineHeight="tall">
+        <Text pr="6" color={mode('green.600', 'green.400')} lineHeight="tall">
           {children}
         </Text>
       </Stack>

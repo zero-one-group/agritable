@@ -18,7 +18,7 @@ export const AccountSwitcherButton = (props: FlexProps) => {
       display="flex"
       alignItems="center"
       rounded="lg"
-      bg="gray.700"
+      bg="green.700"
       px="3"
       py="2"
       fontSize="sm"
@@ -26,7 +26,7 @@ export const AccountSwitcherButton = (props: FlexProps) => {
       cursor="pointer"
       outline="0"
       transition="all 0.2s"
-      _active={{ bg: 'gray.600' }}
+      _active={{ bg: 'green.600' }}
       _focus={{ shadow: 'outline' }}
     >
       <HStack flex="1" spacing="3">
@@ -39,13 +39,10 @@ export const AccountSwitcherButton = (props: FlexProps) => {
           alt="Chakra UI"
         />
         <Box textAlign="start">
-          <Box fontWeight="semibold">Chakra UI</Box>
-          <Box fontSize="xs" color="gray.400">
-            ID 123343
-          </Box>
+          <Box fontWeight="semibold">co-op z</Box>
         </Box>
       </HStack>
-      <Box fontSize="lg" color="gray.400">
+      <Box fontSize="lg" color="green.400">
         <HiSelector />
       </Box>
     </Flex>

@@ -25,17 +25,17 @@ export const NavItem = (props: NavItemProps) => {
       userSelect="none"
       rounded="md"
       transition="all 0.2s"
-      bg={active ? 'gray.700' : undefined}
-      _hover={{ bg: 'gray.700' }}
-      _active={{ bg: 'gray.600' }}
+      bg={active ? 'green.700' : undefined}
+      _hover={{ bg: 'green.700' }}
+      _active={{ bg: 'green.600' }}
     >
-      <Box fontSize="lg" color={active ? 'currentcolor' : 'gray.400'}>
+      <Box fontSize="lg" color={active ? 'currentcolor' : 'green.400'}>
         {icon}
       </Box>
       <Box
         flex="1"
         fontWeight="inherit"
-        color={subtle ? 'gray.400' : undefined}
+        color={subtle ? 'green.400' : undefined}
       >
         {label}
       </Box>

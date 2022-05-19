@@ -6,14 +6,14 @@ import { BiCreditCard, BiNews } from 'react-icons/bi';
 
 import { AccountSwitcher, NavItem } from '@agritable/web/shared/dashboard-ui';
 
-import { Home, PricePrediction } from '@agritable/web/dashboard-pages';
+import { Home, Inventory } from '@agritable/web/dashboard-pages';
 
 export function WebDashboard() {
   console.log('render');
   return (
     <Box height="100vh" overflow="hidden" position="relative">
       <Flex h="full" id="app-container">
-        <Box w="64" bg="gray.900" color="white" fontSize="sm">
+        <Box w="64" bg="green.900" color="white" fontSize="sm">
           <Flex h="full" direction="column" px="4" py="4">
             <AccountSwitcher />
             <Stack spacing="8" flex="1" overflow="auto" pt="8">
@@ -24,21 +24,24 @@ export function WebDashboard() {
                   label="Home"
                 />
                 <NavItem
-                  href="dashboard/price-prediction"
+                  href="dashboard/inventory"
                   icon={<BiNews />}
-                  label="Price prediction"
+                  label="Inventory"
                 />
               </Stack>
             </Stack>
           </Flex>
         </Box>
-        <Box bg={mode('white', 'gray.800')} flex="1" p="6">
+        <Box
+          bg={mode('white', 'green.800')}
+          flex="1"
+          p="6"
+          height="full"
+          overflowY="scroll"
+        >
           <Switch>
             <Route path="/dashboard/home" component={Home}></Route>
-            <Route
-              path="/dashboard/price-prediction"
-              component={PricePrediction}
-            ></Route>
+            <Route path="/dashboard/inventory" component={Inventory}></Route>
           </Switch>
         </Box>
       </Flex>

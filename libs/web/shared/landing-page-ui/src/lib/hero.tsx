@@ -24,7 +24,7 @@ export function Hero() {
             <Stack spacing={{ base: '8', md: '12' }}>
               <Stack spacing="4">
                 <Badge
-                  colorScheme="blue"
+                  colorScheme="green"
                   alignSelf="start"
                   size={useBreakpointValue({ base: 'md', md: 'lg' })}
                 >
@@ -70,7 +70,7 @@ export function Hero() {
               <Img
                 boxSize="full"
                 objectFit="cover"
-                src="https://tinyurl.com/yeyjvptc"
+                src="https://images.unsplash.com/photo-1498408040764-ab6eb772a145?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000"
                 alt="Lady at work"
               />
             </Box>
