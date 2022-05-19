@@ -18,41 +18,13 @@ import {
   Tr,
 } from '@chakra-ui/react';
 
-export const TableInventory = (props: TableProps) => {
-  const formatToIdr = new Intl.NumberFormat('id-ID', {
-    style: 'currency',
-    currency: 'IDR',
-  });
+type TableInventoryProps = {
+  data: { name: string; qty: number; month: string }[];
+};
 
-  const surplusStockData = [
-    {
-      name: 'Yohan',
-      qty: 10,
-      month: 'Mei, 2022',
-    },
-    {
-      name: 'Pangeran',
-      qty: 4,
-      month: 'Mei, 2022',
-    },
-    {
-      name: 'Doni',
-      qty: 3,
-      month: 'Mei, 2022',
-    },
-    {
-      name: 'Joshua',
-      qty: 2,
-      month: 'Mei, 2022',
-    },
-    {
-      name: 'Budi',
-      qty: 20,
-      month: 'Mei, 2022',
-    },
-  ];
+export const TableInventory = (props: TableInventoryProps) => {
   return (
-    <ChakraTable {...props}>
+    <ChakraTable>
       <Thead>
         <Tr>
           <Th>Name</Th>
@@ -61,16 +33,16 @@ export const TableInventory = (props: TableProps) => {
         </Tr>
       </Thead>
       <Tbody>
-        {surplusStockData.map((data) => (
+        {props.data.map((v) => (
           <Tr>
             <Td>
-              <Text color="muted">{data.name}</Text>
+              <Text color="muted">{v.name}</Text>
             </Td>
             <Td>
-              <Text color="muted">{data.qty}</Text>
+              <Text color="muted">{v.qty}</Text>
             </Td>
             <Td>
-              <Text color="muted">{data.month}</Text>
+              <Text color="muted">{v.month}</Text>
             </Td>
           </Tr>
         ))}

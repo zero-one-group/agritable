@@ -14,7 +14,8 @@ type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
   action: () => void;
-  title:
+  title: string;
+  form:
 };
 
 export const Modal = (props: ModalProps) => {

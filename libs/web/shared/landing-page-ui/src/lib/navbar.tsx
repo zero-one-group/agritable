@@ -27,7 +27,7 @@ export function Navbar() {
               justifyContent="space-between"
               flex="1"
             >
-              <Tabs colorScheme="green" isFitted variant="unstyled">
+              {/* <Tabs colorScheme="green" isFitted variant="unstyled">
                 <TabList>
                   {['Product', 'Pricing', 'Resources', 'Support'].map(
                     (item) => (
@@ -48,7 +48,7 @@ export function Navbar() {
                   borderTopRadius="md"
                   bg="green.400"
                 />
-              </Tabs>
+              </Tabs> */}
               <HStack spacing="3">
                 <a href="/dashboard">
                   <Button colorScheme="green">Sign in</Button>

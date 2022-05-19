@@ -18,7 +18,11 @@ import {
   Tr,
 } from '@chakra-ui/react';
 
-export const TableHome = (props: TableProps) => {
+type TableHomeProps = {
+  onOpen: () => void;
+};
+
+export const TableHome = (props: TableHomeProps) => {
   const formatToIdr = new Intl.NumberFormat('id-ID', {
     style: 'currency',
     currency: 'IDR',
@@ -67,7 +71,7 @@ export const TableHome = (props: TableProps) => {
     },
   ];
   return (
-    <ChakraTable {...props}>
+    <ChakraTable>
       <Thead>
         <Tr>
           <Th>Name</Th>
@@ -101,7 +105,9 @@ export const TableHome = (props: TableProps) => {
               <Text color="muted">{formatToIdr.format(data.price)}</Text>
             </Td>
             <Td>
-              <Button colorScheme="green">Sell</Button>
+              <Button colorScheme="green" onClick={props.onOpen}>
+                Sell
+              </Button>
             </Td>
           </Tr>
         ))}
