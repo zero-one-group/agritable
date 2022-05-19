@@ -4,8 +4,10 @@
   "projects": {
     "web": "apps/web",
     "web-dashboard": "libs/web/dashboard",
+    "web-dashboard-pages": "libs/web/dashboard-pages",
     "web-e2e": "apps/web-e2e",
     "web-landing-page": "libs/web/landing-page",
-    "web-shared-ui": "libs/web/shared/ui"
+    "web-shared-dashboard-ui": "libs/web/shared/dashboard-ui",
+    "web-shared-landing-page-ui": "libs/web/shared/landing-page-ui"
   }
 }
