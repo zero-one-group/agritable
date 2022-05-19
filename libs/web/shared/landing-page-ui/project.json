@@ -1,6 +1,6 @@
 {
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/web/shared/ui/src",
+  "sourceRoot": "libs/web/shared/landing-page-ui/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -8,14 +8,16 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/web/shared/ui/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "libs/web/shared/landing-page-ui/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/web/shared/ui"],
+      "outputs": ["coverage/libs/web/shared/landing-page-ui"],
       "options": {
-        "jestConfig": "libs/web/shared/ui/jest.config.ts",
+        "jestConfig": "libs/web/shared/landing-page-ui/jest.config.ts",
         "passWithNoTests": true
       }
     }

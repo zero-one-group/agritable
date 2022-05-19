@@ -15,9 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@agritable/web-shared-landing-page-ui": [
+        "libs/web/shared/landing-page-ui/src/index.ts"
+      ],
       "@agritable/web/dashboard": ["libs/web/dashboard/src/index.ts"],
+      "@agritable/web/dashboard-pages": [
+        "libs/web/dashboard-pages/src/index.ts"
+      ],
       "@agritable/web/landing-page": ["libs/web/landing-page/src/index.ts"],
-      "@agritable/web/shared/ui": ["libs/web/shared/ui/src/index.ts"]
+      "@agritable/web/shared/dashboard-ui": [
+        "libs/web/shared/dashboard-ui/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

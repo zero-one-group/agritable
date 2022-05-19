@@ -1,4 +1,9 @@
-import { Navbar, Hero, Feature, Footer } from '@agritable/web/shared/ui';
+import {
+  Navbar,
+  Hero,
+  Feature,
+  Footer,
+} from '@agritable/web-shared-landing-page-ui';
 import { Box } from '@chakra-ui/react';
 
 /* eslint-disable-next-line */
