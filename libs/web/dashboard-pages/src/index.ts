@@ -1,2 +1,2 @@
-export * from './lib/home';
-export * from './lib/price-prediction';
+export * from './lib/Home';
+export * from './lib/inventory';

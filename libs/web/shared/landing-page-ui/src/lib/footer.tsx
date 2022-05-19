@@ -11,7 +11,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <Box bg="blue.500">
+    <Box bg="green.500">
       <Container
         as="footer"
         role="contentinfo"

@@ -1,13 +1,4 @@
-import {
-  Menu,
-  MenuDivider,
-  MenuItem,
-  MenuItemOption,
-  MenuList,
-  MenuOptionGroup,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Menu, MenuItem, MenuList, useColorModeValue } from '@chakra-ui/react';
 
 import { AccountSwitcherButton } from './account-switcher-button';
 
@@ -18,10 +9,12 @@ export const AccountSwitcher = () => {
       <MenuList
         shadow="lg"
         py="4"
-        color={useColorModeValue('gray.600', 'gray.200')}
+        color={useColorModeValue('green.600', 'green.200')}
         px="3"
       >
-        <MenuItem rounded="md">Logout</MenuItem>
+        <a href="/">
+          <MenuItem rounded="md">Logout</MenuItem>
+        </a>
       </MenuList>
     </Menu>
   );

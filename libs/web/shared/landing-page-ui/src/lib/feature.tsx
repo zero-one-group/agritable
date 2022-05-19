@@ -12,7 +12,7 @@ import { FeatureSection } from './feature-section';
 
 export function Feature() {
   return (
-    <Box as="section" bg={mode('gray.50', 'gray.800')} pt="16" pb="32">
+    <Box as="section" bg={mode('green.50', 'green.800')} pt="16" pb="32">
       <Box
         maxW={{ base: 'xl', md: '7xl' }}
         mx="auto"
