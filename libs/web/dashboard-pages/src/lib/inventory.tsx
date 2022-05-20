@@ -60,8 +60,10 @@ export function Inventory() {
   const [data, setData] = useState(surplusStockData);
 
   useEffect(() => {
-    console.log(data);
-  }, [data]);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
+    setData(JSON.parse(localStorage.getItem('dataInv')));
+  }, []);
 
   const pushData = () => {
     const tes = data;
@@ -72,7 +74,11 @@ export function Inventory() {
         month: 'Mei, 2022',
       },
     ]);
-    setData(newData);
+
+    localStorage.setItem('dataInv', JSON.stringify(newData));
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
+    setData(JSON.parse(localStorage.getItem('dataInv')));
     onClose();
   };
   return (

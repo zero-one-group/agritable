@@ -22,12 +22,15 @@ export function Navbar() {
             <Box fontSize="25px" fontWeight="bold" color="green.500">
               Agritable
             </Box>
-            <Box
+            <a href="/dashboard">
+              <Button colorScheme="green">Sign in</Button>
+            </a>
+            {/* <Box
               display={{ base: 'none', lg: 'flex' }}
               justifyContent="space-between"
               flex="1"
-            >
-              {/* <Tabs colorScheme="green" isFitted variant="unstyled">
+            > */}
+            {/* <Tabs colorScheme="green" isFitted variant="unstyled">
                 <TabList>
                   {['Product', 'Pricing', 'Resources', 'Support'].map(
                     (item) => (
@@ -49,12 +52,12 @@ export function Navbar() {
                   bg="green.400"
                 />
               </Tabs> */}
-              <HStack spacing="3">
+            {/* <HStack spacing="3">
                 <a href="/dashboard">
                   <Button colorScheme="green">Sign in</Button>
                 </a>
-              </HStack>
-            </Box>
+              </HStack> */}
+            {/* </Box> */}
             <IconButton
               variant="ghost"
               icon={<FiMenu fontSize="1.25rem" />}
