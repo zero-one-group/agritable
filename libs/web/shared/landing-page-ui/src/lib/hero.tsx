@@ -23,33 +23,21 @@ export function Hero() {
           >
             <Stack spacing={{ base: '8', md: '12' }}>
               <Stack spacing="4">
-                <Badge
-                  colorScheme="green"
-                  alignSelf="start"
-                  size={useBreakpointValue({ base: 'md', md: 'lg' })}
-                >
-                  New components available
-                </Badge>
                 <Stack
                   spacing={{ base: '4', md: '6' }}
                   maxW={{ md: 'xl', lg: 'md', xl: 'xl' }}
                 >
                   <Heading size={useBreakpointValue({ base: 'md', md: 'xl' })}>
-                    Create your app remarkable fast
+                    Protect your agribusiness from uncertainty commodity prices
                   </Heading>
                   <Text fontSize={{ base: 'lg', md: 'xl' }} color="muted">
-                    Choose from over 210+ beautiful and responsive components
-                    and build your app twice as fast.
+                    Track your Agriculture Cooperative inventory to get
+                    recommendation when to sell or buy when commodity price is
+                    volatile
                   </Text>
                 </Stack>
               </Stack>
               <Stack direction={{ base: 'column', md: 'row' }} spacing="3">
-                <Button
-                  variant="primary"
-                  size={useBreakpointValue({ base: 'lg', md: 'xl' })}
-                >
-                  Buy now
-                </Button>
                 <Button
                   variant="secondary"
                   size={useBreakpointValue({ base: 'lg', md: 'xl' })}

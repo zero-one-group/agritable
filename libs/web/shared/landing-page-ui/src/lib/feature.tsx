@@ -23,7 +23,7 @@ export function Feature() {
           letterSpacing="tight"
           fontWeight="extrabold"
         >
-          If you like wallets, you’re gonna love this
+          We mantain and stabilize commodity prices across economies
         </Heading>
         <Box mt="24">
           <SimpleGrid
@@ -33,27 +33,21 @@ export function Feature() {
             <Stack spacing="12" maxW="lg">
               <FeatureSection
                 icon={<Box as={FaCopy} w="6" h="6" />}
-                title="100% transparent"
+                title="Inventory Management System"
               >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt.
+                Track your Inventory and batch of the produce
               </FeatureSection>
               <FeatureSection
                 icon={<Box as={FaPlug} w="6" h="6" />}
-                title="Local bank support"
+                title="Distributed Supply and Demand"
               >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt.
+                Prevent Drop of the Price or Skyrocketing one
               </FeatureSection>
               <FeatureSection
                 icon={<Box as={FaRecycle} w="6" h="6" />}
-                title="Savings automation"
+                title="Achieve Bio-Circular-Green Economy"
               >
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt.
+                No throwing away surplus production
               </FeatureSection>
             </Stack>
             <Center shadow="lg" minH="26rem">
@@ -61,8 +55,8 @@ export function Feature() {
                 objectFit="cover"
                 w="full"
                 h="full"
-                src="https://images.unsplash.com/photo-1609921205586-7e8a57516512?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGRlc2lnbmVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                alt="Holding phone with app installed"
+                src="https://images.unsplash.com/photo-1560493676-04071c5f467b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874"
+                alt="Crop"
               />
             </Center>
           </SimpleGrid>
