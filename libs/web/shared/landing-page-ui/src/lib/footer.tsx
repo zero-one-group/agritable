@@ -27,28 +27,28 @@ export function Footer() {
               <IconButton
                 color="white"
                 as="a"
-                href="#"
+                href="#apechth2022"
                 aria-label="LinkedIn"
                 icon={<FaLinkedin fontSize="1.25rem" />}
               />
               <IconButton
                 color="white"
                 as="a"
-                href="#"
+                href="#apecth2022"
                 aria-label="GitHub"
                 icon={<FaGithub fontSize="1.25rem" />}
               />
               <IconButton
                 color="white"
                 as="a"
-                href="#"
+                href="#apecth2022"
                 aria-label="Twitter"
                 icon={<FaTwitter fontSize="1.25rem" />}
               />
             </ButtonGroup>
           </Stack>
           <Text fontSize="sm" color="white">
-            &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights
+            &copy; {new Date().getFullYear()} Agritable, Inc. All rights
             reserved.
           </Text>
         </Stack>
