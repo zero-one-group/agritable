@@ -70,6 +70,41 @@ export const TableHome = (props: TableHomeProps) => {
       price: 3000,
     },
   ];
+
+  const lackStockData = [
+    {
+      name: 'co-op M',
+      province: 'Jawa Timur',
+      city: 'Blitar',
+      distance: 78,
+      stock: 8000,
+      price: 1550,
+    },
+    {
+      name: 'co-op L',
+      province: 'Jawa Timur',
+      city: 'Batu',
+      distance: 17,
+      stock: 7550,
+      price: 1400,
+    },
+    {
+      name: 'co-op K',
+      province: 'Jawa Timur',
+      city: 'Surabaya',
+      distance: 90,
+      stock: 7210,
+      price: 1250,
+    },
+    {
+      name: 'co-op J',
+      province: 'Jawa Timur',
+      city: 'Sidoarjo',
+      distance: 70,
+      stock: 6982,
+      price: 1000,
+    },
+  ];
   return (
     <ChakraTable>
       <Thead>
