@@ -149,9 +149,11 @@ export function Inventory() {
                   Add +
                 </Button>
               </Box>
-              <Card minH="xs">
-                <TableInventory data={data} />
-              </Card>
+              {data && (
+                <Card minH="xs">
+                  <TableInventory data={data} />
+                </Card>
+              )}
             </Stack>
           </Container>
         </Box>
